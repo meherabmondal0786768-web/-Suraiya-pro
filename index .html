@@ -1,0 +1,34 @@
+!DOCTYPE html>
+‎<html lang="bn">
+‎<head>
+‎    <meta charset="UTF-8">
+‎    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎    <title>AI Assistant</title>
+‎    <link rel="stylesheet" href="style.css">
+‎</head>
+‎<body>
+‎
+‎    <!-- এপিআই কি স্ক্রিন -->
+‎    <div class="card" id="setupScreen">
+‎        <h2>এআই সেটআপ</h2>
+‎        <input type="password" id="apiKey" placeholder="Gemini API Key দিন...">
+‎        <button onclick="connectToServer()">কানেক্ট ও অ্যাপে প্রবেশ করুন</button>
+‎    </div>
+‎
+‎    <!-- চ্যাট স্ক্রিন -->
+‎    <div class="card hidden" id="chatScreen">
+‎        <h3>এআই চ্যাট</h3>
+‎        <div class="chat-box" id="chatContainer">
+‎            <div class="msg system"><b>সিস্টেম:</b> এআই প্রস্তুত! বার্তা লিখুন।</div>
+‎        </div>
+‎        <div class="input-row">
+‎            <input type="text" id="userInput" placeholder="এখানে লিখুন...">
+‎            <button class="mic-btn" id="micBtn">🎤</button>
+‎            <button onclick="sendMessage()">পাঠান</button>
+‎        </div>
+‎    </div>
+‎
+‎    <script src="script.js"></script>
+‎</body>
+‎</html>
+‎
